@@ -1,3 +1,5 @@
+34 lines (26 sloc)  1.16 KB
+
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -22,4 +24,13 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Show
+Route::get('/show/specialty/{id}', [SpecialtyController::class, 'show'])->name('showSpecialty');
+Route::get('/show/physician/{id}', [PhysicianController::class, 'show'])->name('showPhysician');
+
+
+//Get
+Route::get('/specialties/{id}/physicians', [PhysicianController::class, 'indexBySpecialty'])->name('indexBySpecialty');
+Route::get('/physicians/{id}/showBySpecialty', [PhysicianController::class, 'showBySpecialty'])->name('showPhysicianBySpecialty');
