@@ -79,11 +79,10 @@ class SpecialtyController extends Controller
       return $specialty;
 
     }
-
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Clue  $clue
+     * @param  \App\Models\Specialty  $specialty
      * @return \Illuminate\Http\Response
      */
     public function destroy(Specialty $specialty, $id)
