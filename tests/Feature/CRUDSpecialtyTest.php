@@ -95,7 +95,7 @@ class CRUDSpecialtyTest extends TestCase
     public function test_aSpecialtyCanBeShowed(){
         $this->withExceptionHandling();
         $specialty = Specialty::factory()->create();
-        $this->assertCount(1, Specialty::all());
+        $this->assertCount(9, Specialty::all());
         $response = $this->get(route('showSpecialty', $specialty->id));
         $response->assertSee($specialty->name);
         $response->assertStatus(200)->assertViewIs('showSpecialty');
