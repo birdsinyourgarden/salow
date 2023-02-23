@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SpecialtyController;
+use App\Http\Controllers\PhysicianController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::apiResource('specialty', ProblemController::class);
+Route::apiResource('specialty', SpecialtyController::class);
+Route::apiResource('physician', PhysicianController::class);

@@ -13,7 +13,7 @@ class SpecialtySeeder extends Seeder
      *
      * @return void
      */
-    public function run(): void
+    public function run()
     {
       Specialty::create([
         'name' => 'Psychology',
