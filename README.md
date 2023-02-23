@@ -31,13 +31,13 @@ $ npm start
 ```
 ## Authors :superhero_man:	:superhero_woman:	
 ***
-[Luisa](https://github.com/LuisaVAZ)
-[Paloma](https://github.com/birdsinyourgarden)
-[Federico](https://github.com/fcegatti)
-[Alba](https://github.com/albapro)
-[Fadoua](https://github.com/ifadoua2)
-[Maria](https://github.com/Ma-shi22 )
-[Marjane](https://github.com/Marjane506))
-[Liliana](https://github.com/LilianaDal)
+*[Luisa](https://github.com/LuisaVAZ)
+*[Paloma](https://github.com/birdsinyourgarden)
+*[Federico](https://github.com/fcegatti)
+*[Alba](https://github.com/albapro)
+*[Fadoua](https://github.com/ifadoua2)
+*[Maria](https://github.com/Ma-shi22 )
+*[Marjane](https://github.com/Marjane506)
+*[Liliana](https://github.com/LilianaDal)
 
 
