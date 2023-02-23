@@ -30,5 +30,5 @@ Route::get('/show/physician/{id}', [PhysicianController::class, 'show'])->name('
 
 
 //Get
-Route::get('/specialties/{id}/physicians', [PhysicianController::class, 'indexBySpecialty']);
-Route::get('/specialties/{id}/physicians', [PhysicianController::class, 'showBySpecialty']);
+Route::get('/specialties/{id}/physicians', [PhysicianController::class, 'indexBySpecialty'])->name('indexBySpecialty');
+Route::get('/physicians/{id}/showBySpecialty', [PhysicianController::class, 'showBySpecialty'])->name('showPhysicianBySpecialty');

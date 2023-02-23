@@ -59,9 +59,8 @@ class PhysicianController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Physician $physician, $id)
+    public function show(Physician $physician)
     {
-      $physician = Physician::findOrFail($id);
       return $physician;
     }
     /**
