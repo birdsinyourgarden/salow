@@ -72,7 +72,7 @@ class PhysicianController extends Controller
      */
     public function update(Request $request, $id)
     {
-      $physician = Physician::findOrFail($id);
+      $physician = Physician::find($id);
 
       $request->validate([
         'name'=> 'required|max:255',
