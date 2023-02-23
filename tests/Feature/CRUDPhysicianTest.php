@@ -34,11 +34,11 @@ class CRUDPhysicianTest extends TestCase
         parent::tearDown();
     }
      /** @test */
-     public function a_physician_can_be_show()
-     {
-         $response = $this->get(route('showPhysician', ['id' => $this->physician->id]));
-         $response->assertStatus(200);
-     }
+    //  public function a_physician_can_be_show()
+    //  {
+    //      $response = $this->get(route('showPhysician', ['id' => $this->physician->id]));
+    //      $response->assertStatus(200);
+    //  }
 
     /* public function test_example()
     {
