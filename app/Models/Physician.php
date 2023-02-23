@@ -24,3 +24,4 @@ class Physician extends Model
   }
 
 }
+

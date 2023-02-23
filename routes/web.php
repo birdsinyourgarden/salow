@@ -1,3 +1,5 @@
+34 lines (26 sloc)  1.16 KB
+
 <?php
 
 use Illuminate\Support\Facades\Route;
