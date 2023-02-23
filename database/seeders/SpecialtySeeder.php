@@ -15,36 +15,14 @@ class SpecialtySeeder extends Seeder
      */
     public function run()
     {
-      Specialty::create([
-        'name' => 'Psychology',
-    ]);
-    
-    Specialty::create([
-        'name' => 'Pediatrics',
-    ]);
 
-    Specialty::create([
-        'name' => 'Physiotherapy',
-    ]);
-
-    Specialty::create([
-        'name' => 'Dermatology',
-    ]);
-
-    Specialty::create([
-        'name' => 'Ophtalmology',
-    ]);
-
-    Specialty::create([
-        'name' => 'Dentistry',
-    ]);
-
-    Specialty::create([
-        'name' => 'Gynaechology',
-    ]);
-
-    Specialty::create([
-        'name' => 'Meditation',
-    ]);
+      Specialty::firstOrCreate(['name' => 'Psychology']);
+      Specialty::firstOrCreate(['name' => 'Pediatrics']);
+      Specialty::firstOrCreate(['name' => 'Physiotherapy']);
+      Specialty::firstOrCreate(['name' => 'Dermatology']);
+      Specialty::firstOrCreate(['name' => 'Ophtalmology']);
+      Specialty::firstOrCreate(['name' => 'Dentistry']);
+      Specialty::firstOrCreate(['name' => 'Gynaechology']);
+      Specialty::firstOrCreate(['name' => 'Meditation']);
     }
 }
