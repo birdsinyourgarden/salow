@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Physician;
+use App\Models\Specialty;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +19,13 @@ class PhysicianFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+          'name' => fake()->name(),
+          'last_name' => fake()->last_name(),
+          'email' => fake()->unique(),
+          'phone_number' => fake()->phone_number(),
+          'picture' => fake()->picture(),
+          'description' => fake()->description(),
+          'specialty_id' => Specialty::all()->random()->id,
         ];
     }
 }
