@@ -8,11 +8,20 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @return void
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('physicians', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('last_name');
+            $table->string('email')->unique();
+            $table->string('phone_number');
+            $table->string('picture');
+            $table->text('description');
+            $table->foreignId('specialty_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
