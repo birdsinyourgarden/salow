@@ -71,7 +71,7 @@ class PhysicianController extends Controller
       $request->validate([
         'name'=> 'required|max:255',
         'last_name'=> 'required',
-        'email'=> 'required|unique:physicians|max:255',
+        'email'=> 'required|unique:physicians,email,$physician->id|max:255',
         'phone_number'=> 'required',
         'picture',
         'description',
