@@ -12,13 +12,13 @@ Salow is a project with a social base. We have seen the need to make some medica
 ![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
 ## Technologies :desktop_computer:	:electric_plug:	
 ***
-A list of technologies used within the project:
+
 * [Laravel](https://laravel.com/docs/9.x/releases)
 * [Figma](https://www.figma.com/file/cN0W82jkcH02v6IDdzjrIo/salow?node-id=0%3A1&t=xZINDUx038VOrLwr-0)
-* [Html]([https://example.com](https://www.w3schools.com/html/))
+* [Html](https://example.com](https://www.w3schools.com/html/))
 * [Css](https://www.w3schools.com/Css/)
-* [PHP]([https://www.w3schools.com/Css/](https://www.php.net/))
-* [Xampp]([[https://www.w3schools.com/Css/](https://www.php.net/)](https://www.apachefriends.org/es/index.html))
+* [PHP](https://www.w3schools.com/Css/](https://www.php.net/))
+* [Xampp](https://www.w3schools.com/Css/](https://www.php.net/)](https://www.apachefriends.org/es/index.html))
 * [Mysql](https://azure.microsoft.com/es-es/free/mysql/search/?OCID=AIDcmm68ejnsa0_SEM_e91050427798171f79f033b559e09cd4:G:s&ef_id=e91050427798171f79f033b559e09cd4:G:s&msclkid=e91050427798171f79f033b559e09cd4)
 
 ## Installation :floppy_disk:	:cd:	
@@ -31,13 +31,14 @@ $ npm start
 ```
 ## Authors :superhero_man:	:superhero_woman:	
 ***
-*[Luisa](https://github.com/LuisaVAZ)
-*[Paloma](https://github.com/birdsinyourgarden)
-*[Federico](https://github.com/fcegatti)
-*[Alba](https://github.com/albapro)
-*[Fadoua](https://github.com/ifadoua2)
-*[Maria](https://github.com/Ma-shi22 )
-*[Marjane](https://github.com/Marjane506)
-*[Liliana](https://github.com/LilianaDal)
+* [Luisa](https://github.com/LuisaVAZ)
+* [Paloma](https://github.com/birdsinyourgarden)
+* [Federico](https://github.com/fcegatti)
+* [Alba](https://github.com/albapro)
+* [Fadoua](https://github.com/ifadoua2)
+* [Maria](https://github.com/Ma-shi22 )
+* [Marjane](https://github.com/Marjane506)
+* [Liliana](https://github.com/LilianaDal)
+* [Nerea](https://github.com/Npicazo12)
 
 
