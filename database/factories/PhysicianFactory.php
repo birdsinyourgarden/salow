@@ -19,12 +19,12 @@ class PhysicianFactory extends Factory
     public function definition(): array
     {
         return [
-          'name' => fake()->name(),
-          'last_name' => fake()->last_name(),
-          'email' => fake()->unique(),
-          'phone_number' => fake()->phone_number(),
-          'picture' => fake()->picture(),
-          'description' => fake()->description(),
+          'name' => fake()->firstName(),
+          'last_name' => fake()->lastName(),
+          'email' => fake()->email(),
+          'phone_number' => fake()->phoneNumber(),
+          'picture' => fake()->imageUrl(),
+          'description' => fake()->text(),
           'specialty_id' => Specialty::all()->random()->id,
         ];
     }
