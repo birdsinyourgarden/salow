@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Physician;
+use App\Models\Specialty;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -11,12 +12,16 @@ class PhysicianController extends Controller
      /**
      * Display a listing of the resource.
      *
+     * @param int $specialtyId
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($specialtyId)
     {
-      return Physician::all();
+        $specialty = Specialty::findOrFail($specialtyId);
+        $physicians = $specialty->physicians;
+        return $physicians;
     }
+    
     /**
      * Store a newly created resource in storage.
      *
@@ -42,6 +47,7 @@ class PhysicianController extends Controller
       $physician->phone_number = $request->phone_number;
       $physician->picture = $request->picture;
       $physician->description = $request->description;
+      $physician->specialty_id = $request->specialty_id;
 
       $physician->save();
 
@@ -50,24 +56,25 @@ class PhysicianController extends Controller
      /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Physician  $physician
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show(Physician $physician, $id)
     {
-      $physician = Physician::find($id);
+      $physician = Physician::findOrFail($id);
       return $physician;
     }
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Physician  $physician
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Physician $physician, $id)
+    public function update(Request $request, $id)
     {
-      $physician = Physician::find($id);
+      $physician = Physician::findOrFail($id);
+
       $request->validate([
         'name'=> 'required|max:255',
         'last_name'=> 'required',
@@ -84,6 +91,7 @@ class PhysicianController extends Controller
       $physician->phone_number = $request->phone_number;
       $physician->picture = $request->picture;
       $physician->description = $request->description;
+      $physician->specialty_id = $request->specialty_id;
 
       $physician->save();
 
@@ -96,9 +104,9 @@ class PhysicianController extends Controller
      * @param  \App\Models\Physician  $physician
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Physician $physician, $id)
+    public function destroy($id)
     {
-      $physician = Physician::find($id);
+      $physician = Physician::findOrFail($id);
 
       $physician->delete();
       

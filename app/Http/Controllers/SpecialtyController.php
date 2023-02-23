@@ -52,10 +52,10 @@ class SpecialtyController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Specialty $specialty, $id)
-    {
-      $specialty = Specialty::find($id);
-      return $specialty;
-    }
+{
+    $specialty = Specialty::findOrFail($id);
+    return view('showSpecialty', compact('specialty'));
+}
     /**
      * Update the specified resource in storage.
      *

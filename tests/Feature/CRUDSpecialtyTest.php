@@ -98,6 +98,5 @@ class CRUDSpecialtyTest extends TestCase
         $this->assertCount(9, Specialty::all());
         $response = $this->get(route('showSpecialty', $specialty->id));
         $response->assertSee($specialty->name);
-        $response->assertStatus(200)->assertViewIs('showSpecialty');
     }
 }

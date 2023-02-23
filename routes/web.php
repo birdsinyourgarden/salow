@@ -27,3 +27,8 @@ Auth::routes();
 //Show
 Route::get('/show/specialty/{id}', [SpecialtyController::class, 'show'])->name('showSpecialty');
 Route::get('/show/physician/{id}', [PhysicianController::class, 'show'])->name('showPhysician');
+
+
+//Get
+Route::get('/specialties/{id}/physicians', [PhysicianController::class, 'indexBySpecialty']);
+Route::get('/specialties/{id}/physicians', [PhysicianController::class, 'showBySpecialty']);
