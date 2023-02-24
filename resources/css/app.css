@@ -1,8 +1,7 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body {
@@ -18,57 +17,73 @@ body {
     align-items: center;
     height: 85px;
     padding: 5px 10%;
-  }
-  .navbar-brand {
+}
+.navbar .navbar-brand {
     color: white;
-    font-size: 20px;
-    
-  }
-  .navbar-brand a {
+    font-size: 25px;
     cursor: pointer;
-    margin-right: auto;
     float: left;
-  }
-
-  .navbar-brand img {
-    height: 70px;
+}
+.navbar .navbar-brand:hover {
+    color: white;
+    transform: scale(1.2);
+}
+.logo img {
+    height: 50px;
     width: auto;
     transition: all 0.3s;
-  }
-  .navbar-nav {
+}
+.logo img:hover {
+    transform: scale(1.2);
+}
+.navbar-nav {
     margin-left: 200px;
-  }
-  .collapse {
-    float: right;
-    margin: 100px;
-  }
-
-  .collapse .navbar-nav .nav-item .nav-link {
+    padding: 0 20px;
+}
+.collapse {
+    margin: 150px;
+}
+.collapse .navbar-nav .nav-item .nav-link {
     list-style: none;
     color: white;
-    font-size: 20px;
-  }
-
-  .collapse .navbar-nav .nav-item .nav-link li {
-    display: inline-block;
-    padding: 0 20px;
-  }
+    padding: 10px;
+    font-size: 25px;
+    display: flex;
+}
+.header li a:hover {
+    transform: scale(1.1);
+}
+.search img {
+    height: 30px;
+    width: auto;
+    margin-left: 100px;
+}
+.user img {
+    height: 50px;
+    width: auto;
+    margin-left: 400px;
+}
+.search img:hover {
+    transform: scale(1.1);
+}
+.user img:hover {
+    transform: scale(1.1);
+}
 
 .col:hover {
-color:rgba(253, 246, 32, 1);
-
+    color: rgba(253, 246, 32, 1);
 }
 
 .card-title {
     text-align: center;
-    font-size:27px;
+    font-size: 27px;
 }
 
 .rol {
     overflow: hidden;
 }
 
-.card{
+.card {
     overflow: hidden;
 }
 
@@ -76,12 +91,11 @@ color:rgba(253, 246, 32, 1);
     transform: scale(1.1);
 }
 
-
 @media (max-width: 700px) {
     body {
-    font-size: 12px;
+        font-size: 12px;
     }
     .card-title {
         font-size: 16px;
-        }
+    }
 }
