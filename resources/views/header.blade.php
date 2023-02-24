@@ -13,7 +13,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Especialidades</a>
+                        <a class="nav-link" href="#">Specialties</a>
                     </li>
                     <i class="bi bi-person-circle"></i>
                 </ul>

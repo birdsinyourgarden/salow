@@ -22,8 +22,8 @@ class SpecialtyController extends Controller
      */
     public function index()
     {
-      $specialty = Specialty::orderBy('name', 'asc')->paginate(6);
-      return view('layouts.app', compact('specialty'));
+      $specialties = Specialty::orderBy('name', 'asc')->paginate(8);
+      return view('layouts.app', compact('specialties'));
     }
 
     /**

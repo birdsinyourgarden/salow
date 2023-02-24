@@ -28,6 +28,11 @@
     @include('carousel')
     <main class="py-4">
         @yield('content')
+        <div class="row row-cols-2 row-cols-md-4 g-4 mt-2 ms-4 me-4">
+        @foreach ($specialties as $specialty)
+            @include('card')
+        @endforeach
+        </div>
     </main>
     @include('footer')
 </body>
