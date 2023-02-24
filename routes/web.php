@@ -22,4 +22,5 @@ use App\Http\Controllers\SpecialtyController;
 
 Auth::routes();
 
-Route::get('/', [SpecialtyController::class, 'index']);
+Route::get('/', [SpecialtyController::class, 'index'])->name('home');
+Route::get('/home', [SpecialtyController::class, 'index']);

@@ -1,5 +1,3 @@
-@extends('layouts.app')
-@section('content')
 <section>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -15,4 +13,3 @@
         </div>
     </div>
 </section>
-@endsection
