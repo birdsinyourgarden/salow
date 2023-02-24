@@ -20,10 +20,9 @@ body {
 }
 .navbar .navbar-brand {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
     float: left;
-    transition: all 0.3s;
 }
 .navbar .navbar-brand:hover {
     color: white;
@@ -47,16 +46,28 @@ body {
 .collapse .navbar-nav .nav-item .nav-link {
     list-style: none;
     color: white;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 25px;
     display: flex;
 }
 .header li a:hover {
     transform: scale(1.1);
 }
-.fa-regular {
-    width: 45px;
-    height: 45px;
-    color: white;
+.search img {
+    height: 30px;
+    width: auto;
+    margin-left: 100px;
+}
+.user img {
+    height: 50px;
+    width: auto;
+    margin-left: 400px;
+}
+.search img:hover {
+    transform: scale(1.1);
+}
+.user img:hover {
+    transform: scale(1.1);
 }
 
 .col:hover {
